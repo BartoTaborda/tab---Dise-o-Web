@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-sizing: border-box;
+  -moz-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  color: #2c2e12;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #2c2e12;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+.my-float {
+  margin-top: 9px;
+  margin-left: 2px;
+}
+.menu-bar-pc {
+  width: 120%;
+  position: fixed;
+  z-index: 99;
+  left: -10%;
+  top: -10px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8rem;
+  background-image: url(../img/Papel\ png.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.logo {
+  height: 10px;
+  position: absolute;
+  top: 10px;
+}
+.top-redes {
+  font-size: 1.2rem;
+  padding: 1rem 1rem;
+  position: fixed;
+  text-align: center;
+  z-index: 100;
+  top: 20px;
+  right: 20px;
+}
+.top-redes a {
+  margin-right: 0.5rem;
+}
+.top-redes a:hover {
+  color: #000000;
+}
+.main {
+  margin-top: 8rem;
+}
+.otravez {
+  background-image: url(../img/Papel\ png.png);
+}

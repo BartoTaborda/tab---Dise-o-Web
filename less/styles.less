@@ -1,0 +1,118 @@
+// ---------------------- VARIABLES ----------------------
+
+//COLORES
+@negro-custom: #000000;
+@blanco: rgb(255, 255, 255);
+@amarillo: rgb(255, 231, 11);
+@texto-oscuro: #2c2e12;
+@texto-claro: rgb(255, 231, 11);
+
+
+//FUENTES
+
+
+// ----------------------- GENERALES ----------------------
+
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-sizing: border-box;
+    -moz-sizing: border-box;
+    box-sizing: border-box;
+};
+
+body{
+    font-size: 16px;
+    color: @texto-oscuro;
+};
+
+img{
+    vertical-align: top;
+    max-width: 100%;
+};
+
+a{
+    text-decoration: none;
+    color: @texto-oscuro;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+    //&:hover{}
+};
+
+// ---------------------- BOTON WTSP ----------------------
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:20px;
+	background-color:rgb(37, 211, 102);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:40px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+};
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+};
+.my-float{
+    margin-top: 9px;
+    margin-left: 2px;
+};
+
+// ---------------------- ENCABEZADO ----------------------
+
+.menu-bar-pc{
+    width: 120%;
+    position: fixed;
+    z-index: 99;
+    left: -10%;
+    top: -10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    min-height: 8rem;
+    background-image: url(../img/Papel\ png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+}
+.logo{
+    height: 10px;
+    position:absolute;
+    top: 10px;
+}
+
+.top-redes{
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+    position:fixed;
+	text-align:center;
+    z-index:100;
+    top:20px;
+	right:20px;
+    a{
+        margin-right: 0.5rem;
+        &:hover{
+            color: #000000;
+        }
+    }
+}
+
+// ---------------------- ENCABEZADO ----------------------
+.main{
+    margin-top: 8rem;
+}
+
+.otravez{
+    background-image: url(../img/Papel\ png.png);
+}
