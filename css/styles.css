@@ -119,8 +119,6 @@ a {
   color: #afa11d;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 400px;
 }
 .compu {
   width: 100%;
@@ -133,6 +131,8 @@ a {
 .compu p {
   width: 100%;
   position: absolute;
+  font-size: 1.5rem;
+  color: #afa11d;
 }
 .degrade {
   display: -webkit-box;
