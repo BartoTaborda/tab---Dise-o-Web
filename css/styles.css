@@ -149,6 +149,7 @@ a {
       justify-content: space-around;
   background-image: url(../img/Fondo\ dibujo\ amarillo.png);
   background-position: center;
+  text-transform: uppercase;
 }
 .degrade .ejemplo {
   width: 12.5rem;
