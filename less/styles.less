@@ -3,7 +3,7 @@
 //COLORES
 @negro-custom: #000000;
 @blanco: rgb(255, 255, 255);
-@amarillo: rgb(255, 231, 11);
+@amarillo: rgb(175, 161, 29);
 @texto-oscuro: #2c2e12;
 @texto-claro: rgb(255, 231, 11);
 
@@ -33,12 +33,10 @@ img{
 
 a{
     text-decoration: none;
-    color: @texto-oscuro;
+    color:@texto-oscuro;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-
-    //&:hover{}
 };
 
 // ---------------------- BOTON WTSP ----------------------
@@ -76,43 +74,161 @@ a{
     left: -10%;
     top: -10px;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display:flex;
+    justify-content: center;
     align-items:center;
-    min-height: 8rem;
-    background-image: url(../img/Papel\ png.png);
+    min-height: 10rem;
+    max-height: 10rem;
+    background-image: url(../img/Encabezado\ Madera\ Recto.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:bottom;
-}
-.logo{
-    height: 10px;
-    position:absolute;
-    top: 10px;
+
+    .logo{
+        min-width: 170px;
+        max-width: 170px;
+        top: -10px;
+        position: relative;
+    }
 }
 
 .top-redes{
     font-size: 1.2rem;
-    padding: 1rem 1rem;
+    padding: 0 1rem;
     position:fixed;
 	text-align:center;
     z-index:100;
-    top:20px;
-	right:20px;
+    top:2rem;
+	right:0px;
     a{
-        margin-right: 0.5rem;
+        margin-left: 0.5rem;
         &:hover{
             color: #000000;
         }
     }
 }
 
-// ---------------------- ENCABEZADO ----------------------
+// ---------------------- MAIN ----------------------
 .main{
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
 
-.otravez{
-    background-image: url(../img/Papel\ png.png);
+.containerDelMenuPrinc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+.menu-principal{
+    width: 70%;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    border-bottom: @amarillo 1px solid;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    a{
+        padding: 0 2rem;
+        display: inline-block;
+        &:hover{
+            color: @amarillo;
+            transform: scale(1.1);
+            background-color: rgba(0, 0, 0, 10%);
+            border-radius: 400px;
+        }
+    }
+}
+
+.compu{
+    width: 100%;
+    text-align:center;
+    height: 400px;
+    img{
+        margin: 2rem;
+    }
+    p{
+        width: 100%;
+        position: absolute;
+    }
+    
+}
+
+.degrade{
+    //height: 200px;
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    //background: rgb(255,255,255);
+    //background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,174,30,1) 100%, rgba(0,212,255,1) 100%);
+    background-image: url(../img/Fondo\ dibujo\ amarillo.png);
+    background-position: center;
+
+    .ejemplo{
+        width: 12.5rem;
+        margin: 50px;
+        border: #000000 double 1px;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+
+        img{
+            display: block;
+            width:max-content;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            
+            .texto-tarjeta{
+                color: #d32525;
+                text-decoration: solid;
+            }
+        }
+    }
+    
+    P{
+        padding: 1rem;
+    }
+}
+.ejemplo{
+    top: -60px;
+}
+
+
+
+
+// ---------------------- FOOTER ----------------------
+
+.footer{
+    margin-top: 1rem;
+    background: rgb(8, 8, 8);
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    max-height: fit-content;
+
+    p{
+        color: rgba(255, 255, 255, 90%);
+    }
+
+    .bottom-redes{
+        margin-top: .75rem;
+
+        a{
+            padding: 0 0.5625rem;
+            color: rgba(255, 255, 255, 90%);
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+
+            &:hover{
+                color: @amarillo;
+                opacity: 75%;
+            }
+        }
+    }
+}
+

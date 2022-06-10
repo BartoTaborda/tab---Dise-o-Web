@@ -54,45 +54,153 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 8rem;
-  background-image: url(../img/Papel\ png.png);
+  min-height: 10rem;
+  max-height: 10rem;
+  background-image: url(../img/Encabezado\ Madera\ Recto.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
-.logo {
-  height: 10px;
-  position: absolute;
-  top: 10px;
+.menu-bar-pc .logo {
+  min-width: 170px;
+  max-width: 170px;
+  top: -10px;
+  position: relative;
 }
 .top-redes {
   font-size: 1.2rem;
-  padding: 1rem 1rem;
+  padding: 0 1rem;
   position: fixed;
   text-align: center;
   z-index: 100;
-  top: 20px;
-  right: 20px;
+  top: 2rem;
+  right: 0px;
 }
 .top-redes a {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 .top-redes a:hover {
   color: #000000;
 }
 .main {
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
-.otravez {
-  background-image: url(../img/Papel\ png.png);
+.containerDelMenuPrinc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu-principal {
+  width: 70%;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: #afa11d 1px solid;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  z-index: 1;
+  background: #ffffff;
+}
+.menu-principal a {
+  padding: 0 2rem;
+  display: inline-block;
+}
+.menu-principal a:hover {
+  color: #afa11d;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 400px;
+}
+.compu {
+  width: 100%;
+  text-align: center;
+  height: 400px;
+}
+.compu img {
+  margin: 2rem;
+}
+.compu p {
+  width: 100%;
+  position: absolute;
+}
+.degrade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url(../img/Fondo\ dibujo\ amarillo.png);
+  background-position: center;
+}
+.degrade .ejemplo {
+  width: 12.5rem;
+  margin: 50px;
+  border: #000000 double 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.degrade .ejemplo img {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.degrade .ejemplo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.degrade .ejemplo:hover .texto-tarjeta {
+  color: #d32525;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.degrade P {
+  padding: 1rem;
+}
+.ejemplo {
+  top: -60px;
+}
+.footer {
+  margin-top: 1rem;
+  background: #080808;
+  padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+.footer p {
+  color: rgba(255, 255, 255, 0.9);
+}
+.footer .bottom-redes {
+  margin-top: 0.75rem;
+}
+.footer .bottom-redes a {
+  padding: 0 0.5625rem;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer .bottom-redes a:hover {
+  color: #afa11d;
+  opacity: 75%;
 }
