@@ -154,52 +154,108 @@ a{
     
 }
 
-.degrade{
-    //height: 200px;
-    display: flex;
-    text-align: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
-    //background: rgb(255,255,255);
-    //background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,174,30,1) 100%, rgba(0,212,255,1) 100%);
-    background-image: url(../img/Fondo\ dibujo\ amarillo.png);
-    background-position: center;
-    text-transform: uppercase;
+// .degrade{
+//     //height: 200px;
+//     display: flex;
+//     text-align: center;
+//     flex-wrap: nowrap;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     //background: rgb(255,255,255);
+//     //background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,174,30,1) 100%, rgba(0,212,255,1) 100%);
+//     background-image: url(../img/Fondo\ dibujo\ amarillo.png);
+//     background-position: center;
+//     text-transform: uppercase;
 
-    .ejemplo{
-        width: 12.5rem;
-        margin: 50px;
-        border: #000000 double 1px;
-        -webkit-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        transition: all .3s ease;
+//     .ejemplo{
+//         width: 12.5rem;
+//         min-width: 10rem;
+//         margin: 50px;
+//         border: #000000 double 1px;
+//         -webkit-transition: all .3s ease;
+//         -o-transition: all .3s ease;
+//         transition: all .3s ease;
 
-        img{
-            display: block;
-            width:max-content;
+//         img{
+//             display: block;
+//             width:max-content;
+//         }
+
+//         &:hover{
+//             transform: scale(1.05);
+            
+//             .texto-tarjeta{
+//                 color: #d32525;
+//                 text-decoration: solid;
+//             }
+//         }
+//     }
+    
+//     P{
+//         padding: 1rem;
+//     }
+// }
+// .ejemplo{
+//     top: -60px;
+// }
+
+
+.tarjetas{
+
+    .servicios{
+        position: relative;
+        background-image: url(../img/Fondo\ dibujo\ amarillo.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: fade(#000000, 30%);
+            top: 0;
+            z-index: 1;
+        }
+        .container-tarjetas{
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-transform: uppercase;
+            z-index: 2;
         }
 
-        &:hover{
-            transform: scale(1.05);
-            
-            .texto-tarjeta{
-                color: #d32525;
-                text-decoration: solid;
+        .tarjeta{
+            width: 12.5rem;
+            min-width: 10rem;
+            margin: 50px;
+            top: -60px;
+            border: #000000 double 1px;
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+
+            img{
+                display: block;
+                width:max-content;
+            }
+
+            &:hover{
+                transform: scale(1.05);
+                
+                .texto-tarjeta{
+                    color: #d32525;
+                    text-decoration: solid;
+                }
             }
         }
-    }
-    
-    P{
-        padding: 1rem;
+        
+        P{
+            padding: 1rem;
+        }   
     }
 }
-.ejemplo{
-    top: -60px;
-}
-
-
-
 
 // ---------------------- FOOTER ----------------------
 
