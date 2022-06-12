@@ -9,6 +9,7 @@
 body {
   font-size: 16px;
   color: #2c2e12;
+  font-family: 'Poppins', sans-serif;
 }
 img {
   vertical-align: top;
@@ -86,7 +87,9 @@ a {
   margin-left: 0.5rem;
 }
 .top-redes a:hover {
-  color: #000000;
+  -webkit-transform: scale(2.5) !important;
+          transform: scale(2.5) !important;
+  color: #837916;
 }
 .main {
   margin-top: 10rem;
@@ -137,31 +140,31 @@ a {
 .tarjetas .servicios {
   position: relative;
   background-image: url(../img/Fondo\ dibujo\ amarillo.png);
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 500px;
 }
 .tarjetas .servicios .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.05);
   top: 0;
   z-index: 1;
 }
 .tarjetas .servicios .container-tarjetas {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-transform: uppercase;
-  z-index: 2;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.tarjetas .servicios .tarjeta {
+.tarjetas .servicios .container-tarjetas .tarjeta {
+  text-transform: uppercase;
   width: 12.5rem;
   min-width: 10rem;
   margin: 50px;
@@ -170,23 +173,108 @@ a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.tarjetas .servicios .tarjeta img {
+.tarjetas .servicios .container-tarjetas .tarjeta img {
   display: block;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
-.tarjetas .servicios .tarjeta:hover {
+.tarjetas .servicios .container-tarjetas .tarjeta:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
-.tarjetas .servicios .tarjeta:hover .texto-tarjeta {
+.tarjetas .servicios .container-tarjetas .tarjeta:hover .texto-tarjeta {
   color: #d32525;
   -webkit-text-decoration: solid;
           text-decoration: solid;
 }
-.tarjetas .servicios P {
+.tarjetas .servicios .container-tarjetas P {
   padding: 1rem;
+}
+.formulario {
+  position: relative;
+  z-index: 3;
+  background: #FFF;
+  max-width: 40.625rem;
+  margin: 0 auto;
+  padding: 2.25rem;
+  margin-top: -6.25rem;
+  width: 90%;
+}
+.formulario .formulario-contacto .input-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.formulario .formulario-contacto .input-group input[type="text"],
+.formulario .formulario-contacto .input-group input[type="email"],
+.formulario .formulario-contacto .input-group textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #2c2e12;
+  width: 100%;
+  outline: none;
+  padding: 0.9375rem 0;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(175, 161, 29, 0.5);
+  vertical-align: top;
+}
+.formulario .formulario-contacto .input-group input[type="text"]:focus,
+.formulario .formulario-contacto .input-group input[type="email"]:focus,
+.formulario .formulario-contacto .input-group textarea:focus {
+  border-bottom: 2px solid #afa11d;
+}
+.formulario .formulario-contacto .input-group textarea {
+  max-width: 100%;
+  max-height: 10.25rem;
+  min-height: 5.125rem;
+  min-width: 100%;
+}
+.formulario .formulario-contacto .input-group label {
+  color: #535353;
+  font-family: 'Poppins', sans-serif;
+}
+.formulario .formulario-contacto .input-group label.label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.formulario .formulario-contacto .input-group label.label.active {
+  top: -0.75rem;
+  margin-left: 0;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  color: #535353;
+}
+.formulario .formulario-contacto .input-group .error {
+  position: absolute;
+  color: #ff3b3b;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+}
+.formulario .formulario-contacto input[type="submit"] {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #afa11d;
+  border-radius: 1px;
+  border: 2px solid #FFF;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+  padding: 0.9375rem;
+  width: 20%;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.formulario .formulario-contacto input[type="submit"]:hover {
+  background: #837916;
 }
 .footer {
   margin-top: 1rem;
